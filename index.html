@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Try Catch Example</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Try Catch Example</h2>
+    <button onclick="checkError()">Click Me</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkError() {
+            try {
+               
+                let x = y + 10;  
+                document.getElementById("result").innerHTML = x;
+            }
+            catch(error) {
+                document.getElementById("result").innerHTML =
+                    "Error occurred: " + error.message;
+            }
+        }
+    </script>
+
+</body>
+</html>
